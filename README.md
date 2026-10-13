@@ -21,6 +21,7 @@ Link `Palbase` and the products the app uses:
 | `PalbaseNotify` | Push: this device's token for the signed-in user, preferences, topics |
 | `PalbaseStorage` | Files: uploads and downloads with URLs the backend signs |
 | `PalbasePurchases` | What the signed-in customer has bought, in any store |
+| `PalbasePurchasesUI` | The paywall the project publishes, drawn natively in SwiftUI |
 | `Palbe` | What the client `palbase apps:sync` generates for the app's own backend compiles against |
 
 `palbase apps:sync` (the Palbase CLI) writes the app's environments and backend clients; the docs at [palbase.studio](https://palbase.studio) show the setup.

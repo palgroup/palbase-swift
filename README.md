@@ -49,7 +49,7 @@ if pb.debug.isEnabled {           // re-renders when the flag flips
 .sheet(isPresented: $showingConsole) { pb.debug.view }
 ```
 
-`palbase apps:sync` (the Palbase CLI) writes the app's environments and backend clients; the docs at [palbase.studio](https://palbase.studio) show the setup.
+`palbase apps:sync` (the Palbase CLI) writes the app's environments and backend clients; [the iOS docs](https://palbase.studio/docs/ios/overview) show the setup and every product, and every page of Palbase's docs is indexed for AI assistants at [palbase.studio/llms.txt](https://palbase.studio/llms.txt).
 
 Requires iOS 18 and Xcode 16 or newer.
 

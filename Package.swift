@@ -1,5 +1,5 @@
 // swift-tools-version:6.0
-// Palbase's iOS SDK 0.5.2 — built from palbase-swift-src by scripts/xcframework.sh; do not edit here.
+// Palbase's iOS SDK 0.6.0 — built from palbase-swift-src by scripts/xcframework.sh; do not edit here.
 import PackageDescription
 
 let package = Package(
@@ -21,18 +21,18 @@ let package = Package(
         .library(name: "Palbe", targets: ["Palbe", "Palbase"]),
     ],
     targets: [
-        .binaryTarget(name: "Palbase", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/Palbase.xcframework.zip", checksum: "4525207ffb8be9654a1db480596d4c97eb72e4955f5c9177b8d4f4d85419f178"),
-        .binaryTarget(name: "PalbaseFlags", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseFlags.xcframework.zip", checksum: "45e1cd0538e7a3fc8aa7462e20af95c31e163a6c2cb45a70c5ada1b26e119e1c"),
-        .binaryTarget(name: "PalbaseAnalytics", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseAnalytics.xcframework.zip", checksum: "202f074fb71be8095ec7855208e9a934c65bb1fc72a02ae0c01a379c7030dce5"),
-        .binaryTarget(name: "PalbaseRealtime", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseRealtime.xcframework.zip", checksum: "d731480e07c0b318e681950bf4097d2d0ae308f410a5407fac613ece7c854a34"),
-        .binaryTarget(name: "PalbaseNotify", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseNotify.xcframework.zip", checksum: "8abcaa8e6c1170a66d532e5791650767b0963f2726aeeccb26577e2a6c401607"),
-        .binaryTarget(name: "PalbaseNotificationService", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseNotificationService.xcframework.zip", checksum: "89b0a7c7922766b42c14e6f3e6d8bc1126910b9bf6f6a5d3aae4029485a999ad"),
-        .binaryTarget(name: "PalbaseStorage", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseStorage.xcframework.zip", checksum: "c3aaf1cd7e86d033ae25700bf626e1c30d148411c5ed9a56ecb5c60beb939fc9"),
-        .binaryTarget(name: "PalbasePurchases", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbasePurchases.xcframework.zip", checksum: "6c77e5c7732c401e0fcc544ccfb19c7f6ddd9938459a9e1d232ff4e83cc31aff"),
-        .binaryTarget(name: "PalbaseUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseUI.xcframework.zip", checksum: "8c057887c3b029caf7361622c42391d5df05fd325dbd380fb5efda0fe2adc78a"),
-        .binaryTarget(name: "PalbasePurchasesUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbasePurchasesUI.xcframework.zip", checksum: "7a7cb5694f2a89d9f9c31c3f30d96027c8731b7d44e86632470908d06b6f675a"),
-        .binaryTarget(name: "PalbaseNotifyUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseNotifyUI.xcframework.zip", checksum: "bc7bf0dc48e08f7b01801867ac1f6876b87ffcf6b2e268a3382d298b833790a5"),
-        .binaryTarget(name: "PalbaseDebug", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/PalbaseDebug.xcframework.zip", checksum: "97f0473b817638fcf54dcded394cbf5ca6121534daab714f1c557c5e49643c76"),
-        .binaryTarget(name: "Palbe", url: "https://palgroup.github.io/palbase-swift-binaries/0.5.2/Palbe.xcframework.zip", checksum: "3bbcdd17fd771768c9ea32f8f8c7d851ed3de39396875c823ce64531bbbe1001"),
+        .binaryTarget(name: "Palbase", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/Palbase.xcframework.zip", checksum: "d580ad250ba1787e39bbe4b5d7dba82ef7740a5d14a4cbcbd3cf1cfbf5c2b39a"),
+        .binaryTarget(name: "PalbaseFlags", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseFlags.xcframework.zip", checksum: "4ff098a1b036bd639dea2a747f3659736394edc02c5dc925c146e4671d0bafd0"),
+        .binaryTarget(name: "PalbaseAnalytics", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseAnalytics.xcframework.zip", checksum: "f735eda7d82bdf9c09ccb8d49b96ca4f5a50d4de16426bb92100345a949ae045"),
+        .binaryTarget(name: "PalbaseRealtime", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseRealtime.xcframework.zip", checksum: "66380b7cfeb40d343e1e35a615889bd309933d7e60c4b38c65050807099b322f"),
+        .binaryTarget(name: "PalbaseNotify", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseNotify.xcframework.zip", checksum: "73207a4dbc0b891edf076571deb85756d95b0687688cd6288e01db124b98fcd2"),
+        .binaryTarget(name: "PalbaseNotificationService", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseNotificationService.xcframework.zip", checksum: "3e0307ad232d2792ed6894d6e467ecaad9b2edd7c9c829f1fa8cdbe66997e3af"),
+        .binaryTarget(name: "PalbaseStorage", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseStorage.xcframework.zip", checksum: "a5c13956fcd5acc6fb5925281c08592cd2d9173a4f792f61d4b3d1ede47d803a"),
+        .binaryTarget(name: "PalbasePurchases", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbasePurchases.xcframework.zip", checksum: "dcf77c6c681a6410851f07961779c92bc965b883abe8a24b395f72fe83c2b3e3"),
+        .binaryTarget(name: "PalbaseUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseUI.xcframework.zip", checksum: "38d2ab85d063262d1544195aaa9defd803fcfb3daa013ff9dd12bc24ccb6d230"),
+        .binaryTarget(name: "PalbasePurchasesUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbasePurchasesUI.xcframework.zip", checksum: "e99f6226664c0ffb6ea7c3948fbf5d237fb9595fe0ff9ea305aa4dedfc6aef8d"),
+        .binaryTarget(name: "PalbaseNotifyUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseNotifyUI.xcframework.zip", checksum: "7a4f155cd5ade5fa60249389b51598ff68d7d22c230f77b8dd0f5dd8066aa6ba"),
+        .binaryTarget(name: "PalbaseDebug", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/PalbaseDebug.xcframework.zip", checksum: "92d16774d103511748963838fd575ea2b9ecfb70184acdd703133915c2d7ba93"),
+        .binaryTarget(name: "Palbe", url: "https://palgroup.github.io/palbase-swift-binaries/0.6.0/Palbe.xcframework.zip", checksum: "72596caf5895e7987d06c25dbcc39522df746faac7e8a83dacf1ee24d1983f76"),
     ]
 )

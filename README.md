@@ -22,6 +22,8 @@ Link `Palbase` and the products the app uses:
 | `PalbaseNotificationService` | The app's notification service extension: each push reported delivered, its picture shown |
 | `PalbaseStorage` | Files: uploads and downloads with URLs the backend signs |
 | `PalbasePurchases` | What the signed-in customer has bought, in any store |
+| `PalbaseMessaging` | The signed-in person's conversations — direct ones and groups — kept on the device and live, files encrypted on the device |
+| `PalbaseMessagingNotificationService` | The notification service extension of an app with messaging: a message's push downloads it to the device |
 | `PalbaseUI` | The screens a project designs — paywalls, in-app messages, inbox cards — drawn natively in SwiftUI (the renderer the UI products share) |
 | `PalbasePurchasesUI` | The paywall the project publishes, drawn natively in SwiftUI |
 | `PalbaseNotifyUI` | The project's in-app campaigns shown over the app, and the person's inbox drawn ready, in SwiftUI |

@@ -1,5 +1,5 @@
 // swift-tools-version:6.0
-// Palbase's iOS SDK 0.7.3 — built from palbase-swift-src by scripts/xcframework.sh; do not edit here.
+// Palbase's iOS SDK 0.7.4 — built from palbase-swift-src by scripts/xcframework.sh; do not edit here.
 import PackageDescription
 
 let package = Package(
@@ -23,20 +23,20 @@ let package = Package(
         .library(name: "Palbe", targets: ["Palbe", "Palbase"]),
     ],
     targets: [
-        .binaryTarget(name: "Palbase", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/Palbase.xcframework.zip", checksum: "39885acb1af9994cf3d8bc1f77879ff28c3630d372637b53af05a3ff428cebaa"),
-        .binaryTarget(name: "PalbaseFlags", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseFlags.xcframework.zip", checksum: "bb1aafc6b08de3d01bc6a4f5c5f447eb84d132a8cc4a4075500e3ad1135f49da"),
-        .binaryTarget(name: "PalbaseAnalytics", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseAnalytics.xcframework.zip", checksum: "ac9496d324ec45a58a869d7d43b8831f1b6690a307a72ff2f8603f8e1b732b08"),
-        .binaryTarget(name: "PalbaseRealtime", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseRealtime.xcframework.zip", checksum: "911bd6ae0cfb435d89aaa09c2db44905fe6aba1f22637344a67c2a54a84daf52"),
-        .binaryTarget(name: "PalbaseNotify", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseNotify.xcframework.zip", checksum: "79a657e1f7481e60e1505fa7b8bf067b076885bbccc7a3fde5afba7473b0bac8"),
-        .binaryTarget(name: "PalbaseNotificationService", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseNotificationService.xcframework.zip", checksum: "4e5bcbc94dbaa6d726b20438137842e8d310707eca2c698ab0cb25384cba078e"),
-        .binaryTarget(name: "PalbaseStorage", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseStorage.xcframework.zip", checksum: "96d4f12d0c9952e3b4c0e70ae98e9a8937851d810d4332571105d20f92e40241"),
-        .binaryTarget(name: "PalbasePurchases", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbasePurchases.xcframework.zip", checksum: "d9df9ac0ff9fe711f446ec21df5e5c08247046907c42e7ae245d784ddf9cbda5"),
-        .binaryTarget(name: "PalbaseMessaging", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseMessaging.xcframework.zip", checksum: "161da0f90773f8853873db54572f81067d8cb5e1c30df92c7b9eb88e9d367473"),
-        .binaryTarget(name: "PalbaseMessagingNotificationService", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseMessagingNotificationService.xcframework.zip", checksum: "6fb15b8034158315eba4c11f46cee4f20095b75537129fad53f46e7f2c168259"),
-        .binaryTarget(name: "PalbaseUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseUI.xcframework.zip", checksum: "4edd449e0cceed0ec25bf1cc5b0a279a0358ab927b40882fcf7e5398ab54d89b"),
-        .binaryTarget(name: "PalbasePurchasesUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbasePurchasesUI.xcframework.zip", checksum: "bb545708d6867ddf1d47c3dc2df24213111fa410bdddae0d15df26711f7572c9"),
-        .binaryTarget(name: "PalbaseNotifyUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseNotifyUI.xcframework.zip", checksum: "dc32145910c9149e5ae4c81d07d1b39d4751ab3343c98c20dcaa051411bfca07"),
-        .binaryTarget(name: "PalbaseDebug", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/PalbaseDebug.xcframework.zip", checksum: "48628e2dbc3dcecf0f73799b42f26bfe1c56986e276e232acdfc0e660bf100d6"),
-        .binaryTarget(name: "Palbe", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.3/Palbe.xcframework.zip", checksum: "e482b08002a41599b4be4e3c3c2fa82d2e1a4d54b913b08048f12942a2894844"),
+        .binaryTarget(name: "Palbase", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/Palbase.xcframework.zip", checksum: "e1f9658809f47099753a696d1a4b75a6b19973650e92ad43f9ba243c144e3936"),
+        .binaryTarget(name: "PalbaseFlags", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseFlags.xcframework.zip", checksum: "ece4e601024badca5f446ef22ad2f6c93b22a4ea567a1db4bdd8b4ff69497c99"),
+        .binaryTarget(name: "PalbaseAnalytics", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseAnalytics.xcframework.zip", checksum: "9cea45170928d5867a8d0f75732e0c0adaf02f26e73a805163f1079adeacc4e3"),
+        .binaryTarget(name: "PalbaseRealtime", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseRealtime.xcframework.zip", checksum: "ea8f7e27a8f24428783329b9c16ab518a32a96e0ea82422995ee137e460320c8"),
+        .binaryTarget(name: "PalbaseNotify", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseNotify.xcframework.zip", checksum: "50a775b58365008d1c6c7462e5b9ac31690adc8220266e8baf9c504eb76d8e37"),
+        .binaryTarget(name: "PalbaseNotificationService", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseNotificationService.xcframework.zip", checksum: "17aba75b1a86dc9ff7f3c8a6efc95eebdc95a4d6eea5f938c515be006f89dfd1"),
+        .binaryTarget(name: "PalbaseStorage", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseStorage.xcframework.zip", checksum: "d9685ce341b380d9735f320e66db6c7d0ff6a02d26b9d1aebd1a4068de25fbd6"),
+        .binaryTarget(name: "PalbasePurchases", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbasePurchases.xcframework.zip", checksum: "073e4ba548d0bf768904726aafb3031314eb899fadb6f12914bbd5a445cbe91e"),
+        .binaryTarget(name: "PalbaseMessaging", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseMessaging.xcframework.zip", checksum: "114f1bdf878e1cfc2e324d14294875cc825f7e87ad3cd7323bd03e412dc48d57"),
+        .binaryTarget(name: "PalbaseMessagingNotificationService", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseMessagingNotificationService.xcframework.zip", checksum: "75463bc1f33d103bb647c2ae8bbb8922f60c1373e718451479efc77243873a64"),
+        .binaryTarget(name: "PalbaseUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseUI.xcframework.zip", checksum: "a138750039be1acf5aabc4d5ca6240dc941b19bcbfe46e36673c92deeff3d125"),
+        .binaryTarget(name: "PalbasePurchasesUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbasePurchasesUI.xcframework.zip", checksum: "71c3b9cc06ba40a3ab0d6b5bf1334b80a8940222ec8ab869053a6d76689d5522"),
+        .binaryTarget(name: "PalbaseNotifyUI", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseNotifyUI.xcframework.zip", checksum: "4cd80c93345d2130f8b229ca40b0d8d7582fc9e2fd1b9f381f7947d6610d9da2"),
+        .binaryTarget(name: "PalbaseDebug", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/PalbaseDebug.xcframework.zip", checksum: "39d0c85f4d41ef1bd26f3e231d0c09dfddb795abd8db73d4502cab472a10ea97"),
+        .binaryTarget(name: "Palbe", url: "https://palgroup.github.io/palbase-swift-binaries/0.7.4/Palbe.xcframework.zip", checksum: "4be6965de20f7ae251ab02a31a9b8a614ae941e6c69100493a26109ba16424ac"),
     ]
 )

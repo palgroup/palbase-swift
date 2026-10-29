@@ -30,7 +30,7 @@ Link `Palbase` and the products the app uses:
 | `PalbaseDebug` | The in-app debug console's screens (`pb.debug.view`): every request, socket frame and log line, shown only to a user the project turns it on for |
 | `Palbe` | What the client `palbase apps:sync` generates for the app's own backend compiles against |
 
-A chat's live voice is a package of its own, [palbase-swift-voice](https://github.com/palgroup/palbase-swift-voice): it brings WebRTC, which an app that talks to no voice does not resolve.
+A chat's live voice is a package of its own, [palbase-swift-voice](https://github.com/palgroup/palbase-swift-voice): it brings WebRTC, which an app that talks to no voice does not resolve. Voice and video calls are too, [palbase-swift-calls](https://github.com/palgroup/palbase-swift-calls) (`PalbaseCalls`, `PalbaseCallsUI`): they bring WebRTC and LiveKit's client.
 
 ### The debug console
 

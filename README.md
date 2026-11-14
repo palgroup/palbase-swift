@@ -1,6 +1,6 @@
-# Palbase for iOS
+# Palbase for iOS and macOS
 
-The iOS SDK of [Palbase](https://palbase.studio), distributed as binary XCFrameworks.
+The iOS and macOS SDK of [Palbase](https://palbase.studio), distributed as binary XCFrameworks.
 
 ## Install
 
@@ -53,7 +53,28 @@ if pb.debug.isEnabled {           // re-renders when the flag flips
 
 `palbase apps:sync` (the Palbase CLI) writes the app's environments and backend clients; [the iOS docs](https://palbase.studio/docs/ios/overview) show the setup and every product, and every page of Palbase's docs is indexed for AI assistants at [palbase.studio/llms.txt](https://palbase.studio/llms.txt).
 
-Requires iOS 18 and Xcode 16 or newer.
+### A Mac app, and a session the app keeps itself
+
+Every product above builds for macOS 15 too (the voice and the calls are the iPhone's). An app whose session is
+already its own — shared with processes of its own under its own lock — hands the client a keeper instead of letting
+it sign in: the client reads the session before its calls and asks the keeper to renew it, and never refreshes it,
+stores it or signs out on its own.
+
+```swift
+struct Keeper: PalbaseSessionKeeper {
+    func current() throws -> PalbaseKeptSession? { /* the session the app holds now */ }
+    func renew(spent refreshToken: String) async throws -> PalbaseKeptSession { /* renewed under the app's lock */ }
+}
+let pb = PalbaseClient(configuration, sessionKeptBy: Keeper())
+// After the app signs someone in or out:
+await pb.auth.sessionChanged()
+```
+
+On a Mac, an app signed with an App ID (a provisioning profile) keeps the SDK's items in the data protection keychain,
+in the configuration's keychain group when Keychain Sharing names it; one signed without an App ID keeps them in the
+login keychain under a service of its own.
+
+Requires iOS 18 or macOS 15, and Xcode 16 or newer.
 
 ## Licence
 

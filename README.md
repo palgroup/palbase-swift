@@ -29,8 +29,10 @@ Link `Palbase` and the products the app uses:
 | `PalbaseNotifyUI` | The project's in-app campaigns shown over the app, and the person's inbox drawn ready, in SwiftUI |
 | `PalbaseDebug` | The in-app debug console's screens (`pb.debug.view`): every request, socket frame and log line, shown only to a user the project turns it on for |
 | `Palbe` | What the client `palbase apps:sync` generates for the app's own backend compiles against |
+| `PalbaseVoice` | A chat's live voice over WebRTC (`PBVoice`), on iOS and macOS |
+| `PalbaseCalls` | Voice and video calls, group huddles (`pb.calls.place(_:)`), screen sharing and `CallVideoView`, on iOS and macOS (CallKit and VoIP pushes on iOS) |
 
-A chat's live voice is a package of its own, [palbase-swift-voice](https://github.com/palgroup/palbase-swift-voice): it brings WebRTC, which an app that talks to no voice does not resolve. Voice and video calls are too, [palbase-swift-calls](https://github.com/palgroup/palbase-swift-calls) (`PalbaseCalls`, and `PalbaseCallsBroadcast` for a broadcast extension): they bring LiveKit's client and its WebRTC.
+Every product above — including `PalbaseCalls` and `PalbaseVoice` — is distributed directly in `palbase-swift` with zero external SwiftPM dependencies. For an iOS **Broadcast Upload Extension** (whole-screen sharing in the background), link `PalbaseCallsBroadcast` from [palbase-swift-calls](https://github.com/palgroup/palbase-swift-calls) into the extension target alone.
 
 ### The debug console
 
@@ -55,7 +57,7 @@ if pb.debug.isEnabled {           // re-renders when the flag flips
 
 ### A Mac app, and a session the app keeps itself
 
-Every product above builds for macOS 15 too (the voice and the calls are the iPhone's). An app whose session is
+Every product above — including `PalbaseCalls` and `PalbaseVoice` — builds for macOS 15 too. An app whose session is
 already its own — shared with processes of its own under its own lock — hands the client a keeper instead of letting
 it sign in: the client reads the session before its calls and asks the keeper to renew it, and never refreshes it,
 stores it or signs out on its own.

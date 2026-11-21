@@ -21,14 +21,17 @@ Link `Palbase` and the products the app uses:
 | `PalbaseNotify` | Push: this install's token, preferences, topics, how each push went |
 | `PalbaseNotificationService` | The app's notification service extension: each push reported delivered, its picture shown |
 | `PalbaseStorage` | Files: uploads and downloads with URLs the backend signs |
-| `PalbasePurchases` | What the signed-in customer has bought, in any store |
+| `PalbaseIAP` | In-App Purchases: StoreKit 2, entitlements, offers, coupons, and cross-store customer state |
+| `PalbasePayments` | Core real-money payments: PaymentIntents, 3DS/checkout `NextAction`, BIN installments, saved cards, closed-loop wallets & QR |
 | `PalbaseMessaging` | The signed-in person's conversations — direct ones and groups — kept on the device and live, files encrypted on the device |
 | `PalbaseMessagingNotificationService` | The notification service extension of an app with messaging: a message's push downloads it to the device |
 | `PalbaseUI` | The screens a project designs — paywalls, in-app messages, inbox cards — drawn natively in SwiftUI (the renderer the UI products share) |
-| `PalbasePurchasesUI` | The paywall the project publishes, drawn natively in SwiftUI |
+| `PalbaseIAPUI` | The paywall the project publishes, drawn natively in SwiftUI |
+| `PalbasePaymentsUI` | Drop-in SwiftUI payments UI: `PaymentSheet`, `WalletTopUpSheet`, `SavedCardsView`, and `SpendQRView` (PCI-DSS SAQ-A) |
 | `PalbaseNotifyUI` | The project's in-app campaigns shown over the app, and the person's inbox drawn ready, in SwiftUI |
 | `PalbaseDebug` | The in-app debug console's screens (`pb.debug.view`): every request, socket frame and log line, shown only to a user the project turns it on for |
 | `Palbe` | What the client `palbase apps:sync` generates for the app's own backend compiles against |
+| `PalbaseAI` | Guardrailed AI templates (App Attest), streaming chats, live session mirroring & handoff, and voice transport control |
 | `PalbaseVoice` | A chat's live voice over WebRTC (`PBVoice`), on iOS and macOS |
 | `PalbaseCalls` | Voice and video calls, group huddles (`pb.calls.place(_:)`), screen sharing and `CallVideoView`, on iOS and macOS (CallKit and VoIP pushes on iOS) |
 

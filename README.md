@@ -7,7 +7,7 @@ The iOS and macOS SDK of [Palbase](https://palbase.studio), distributed as binar
 Swift Package Manager — in Xcode, *File → Add Package Dependencies…* with `https://github.com/palgroup/palbase-swift`, or in a `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/palgroup/palbase-swift", from: "0.1.0")
+.package(url: "https://github.com/palgroup/palbase-swift", from: "0.25.0")
 ```
 
 Link `Palbase` and the products the app uses:
@@ -23,6 +23,7 @@ Link `Palbase` and the products the app uses:
 | `PalbaseStorage` | Files: uploads and downloads with URLs the backend signs |
 | `PalbaseIAP` | In-App Purchases: StoreKit 2, entitlements, offers, coupons, and cross-store customer state |
 | `PalbasePayments` | Core real-money payments: PaymentIntents, 3DS/checkout `NextAction`, BIN installments, saved cards, closed-loop wallets & QR |
+| `PalbaseCommerce` | Storefront & marketplace commerce client: catalog, listings, Buy Box, carts, checkout, orders, returns & seller portal |
 | `PalbaseMessaging` | The signed-in person's conversations — direct ones and groups — kept on the device and live, files encrypted on the device |
 | `PalbaseMessagingNotificationService` | The notification service extension of an app with messaging: a message's push downloads it to the device |
 | `PalbaseUI` | The screens a project designs — paywalls, in-app messages, inbox cards — drawn natively in SwiftUI (the renderer the UI products share) |

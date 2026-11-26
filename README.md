@@ -7,7 +7,7 @@ The iOS and macOS SDK of [Palbase](https://palbase.studio), distributed as binar
 Swift Package Manager — in Xcode, *File → Add Package Dependencies…* with `https://github.com/palgroup/palbase-swift`, or in a `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/palgroup/palbase-swift", from: "0.26.0")
+.package(url: "https://github.com/palgroup/palbase-swift", from: "0.26.1")
 ```
 
 Link `Palbase` and the products the app uses:
